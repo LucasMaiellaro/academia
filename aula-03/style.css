@@ -1,16 +1,25 @@
+body{
+    margin: 0 auto;
+}
+
+.secao{
+    display: flex;
+}
+
 .div-1{
     background-color: aquamarine;
-    margin: 25%;
-    margin-bottom: 20px;
-    padding: 50px;
-    
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .div-2{
     background-color: red;
-    margin: 25%;
-    padding: 50px;
-    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 body{
