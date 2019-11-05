@@ -1,0 +1,12 @@
+num-incial = 0;
+num-final = 50;
+resposta;
+metade;
+ 
+inicio;
+(num-incial + num-final)/2;
+perguntar  ("o numero que voce pensou é maior que essa metade?");
+enquanto(resposta==sim){
+    metade = (num-incial + num-final)/2;
+    (metade + num-final)/2;
+}
