@@ -1,0 +1,108 @@
+/*========= GERAL========= */
+
+body {
+    display: grid;
+    grid-template-areas: 'navbar'
+                        'banner' 
+                        'main'
+                        'section'
+                        'contact'
+                        'footer'; 
+    grid-template-columns: 100%;
+    margin: 0;
+}
+
+/*========= NAVBAR =========*/
+
+nav {
+    grid-area: 'navbar';
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 85px;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav img{
+    width: 85px;
+}
+
+nav div:nth-child(2) {
+    display: none;
+}
+
+nav div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    height: 20px;
+}
+
+/*========= HEADER =========*/
+
+header {
+    grid-area: banner; 
+    background-image: url(../imagens/ricardin.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+/*========= SECTION GERAL =========*/
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.humilde{
+    background-color: red;
+}
+
+/*========= CABEÇALHO =========*/
+
+#cabecalho {
+    grid-area: main;
+    background-color: #00ff80;
+}
+
+#cabecalho h1, #cabecalho h2 {
+    text-align: center;
+    color: #000000;
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+.subtitulo {
+    width: 350px;
+}
+
+/*========= RESPONSIVO =========*/
+
+@media (max-width: 800px){
+    nav div:nth-child(2){
+        display: inline-block;
+    }
+    nav div:nth-child(3){
+        display: none;
+    }
+    header {
+        background-image: url(../imagens/ricardin-clone.jpeg);
+    }
+}
+
